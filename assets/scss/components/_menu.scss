@@ -1,0 +1,33 @@
+@use "../abstract/variables" as vstyle;
+
+        .menu-items {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            align-items: center;
+            padding: 2rem 4rem;
+            .menu-img {
+                img {
+                    border-radius: 50%;
+                }
+            }
+            p:last-of-type {
+                color: vstyle.$titre-color;
+                font-size: 2rem;
+            }
+            .menu-text {
+                display: flex;
+                flex-direction: column;
+                h3  {
+                    color: vstyle.$text-color;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                }
+                p   {
+                    color: vstyle.$text-color;
+                    font-size: inherit;
+                    margin-top: 0;
+                }
+            }
+        }
+    

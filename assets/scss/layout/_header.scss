@@ -1,0 +1,41 @@
+@use "../abstract/variables" as vstyle;
+
+header {
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: -24vh;
+    position: relative;
+    z-index: 1;
+    .logo-top  {
+        a {
+            h1 {
+                color: white;
+            }
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 2vw;
+            list-style: vstyle.$style-less;
+            padding: 0;
+            li {
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+        .socialmedia {
+            display: flex;
+            gap: 1vw;
+        }
+    }
+}
+
